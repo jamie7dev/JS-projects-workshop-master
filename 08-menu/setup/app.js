@@ -75,8 +75,18 @@ const menu = [
 
 const sectionCenter = document.querySelector(".section-center");
 
+const filterBtns = document.querySelectorAll(".filter-btn");
+
+// load items
 window.addEventListener("DOMContentLoaded", function () {
   displayMenuItems(menu);
+});
+
+// filter items
+filterBtns.forEach(function (btn) {
+  btn.addEventListener("click", function (e) {
+    console.log(e.currentTarget.dataset.id);
+  });
 });
 
 function displayMenuItems(menuItems) {
@@ -99,7 +109,7 @@ function displayMenuItems(menuItems) {
   });
   // console.log(displayMenu);
   displayMenu = displayMenu.join(""); // to make it as html foam without comma
-  console.log(displayMenu);
+  // console.log(displayMenu);
 
   sectionCenter.innerHTML = displayMenu;
 }
