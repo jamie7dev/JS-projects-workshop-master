@@ -71,6 +71,14 @@ const menu = [
     img: "./images/item-9.jpeg",
     desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
   },
+  {
+    id: 10,
+    title: "quarantine buddy",
+    category: "dinner",
+    price: 19.99,
+    img: "./images/item-9.jpeg",
+    desc: `skateboard fam synth authentic semiotics. Live-edge lyft af, edison bulb yuccie crucifix microdosing.`,
+  },
 ];
 
 const sectionCenter = document.querySelector(".section-center");
@@ -112,7 +120,7 @@ function displayMenuItems(menuItems) {
     <div class="item-info">
       <header>
         <h4>${item.title}</h4>
-        <h4 class="price">{item.price}</h4>
+        <h4 class="price">${item.price}</h4>
       </header>
       <p>
         ${item.desc}
