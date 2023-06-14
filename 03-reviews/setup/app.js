@@ -44,7 +44,7 @@ let currentItem = 0;
 
 // load initial item
 window.addEventListener("DOMContentLoaded", function () {
-  showPerson(currentItem);
+  showPerson();
 });
 
 function showPerson() {
