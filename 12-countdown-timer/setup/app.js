@@ -23,7 +23,7 @@ const weekdays = [
 ];
 
 const giveaway = document.querySelector(".giveaway");
-const deadLine = document.querySelector(".deadline");
+const deadline = document.querySelector(".deadline");
 const items = document.querySelectorAll(".deadline-format h4");
 
 const tempDate = new Date();
